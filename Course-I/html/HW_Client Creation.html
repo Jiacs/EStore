@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Simplilearn-Homework</title>
+        <link rel = "stylesheet" href = "HW_Client Createion.css">
+        <script src="validation.js"></script>
+    </head>
+
+	<body>
+    <div>
+        <img src = "https://cdn-icons-png.flaticon.com/512/149/149071.png?w=1380&t=st=1690341991~exp=1690342591~hmac=a8dc3ce452629b18c813957146487ded9247402adeb162511ca60399a314d7b6" alt = "Sign up" width = 100 height = 100/>
+        <h3>Sign up</h3>
+        <form>
+                <b> User name:</b><br>
+                <Input type = "text" id = "uname" name = "uname">
+                <span id="name-error-message" class="error-message"></span>
+
+                <br><b> Password:</b><br>
+                <Input type = "password" id = "password" name = "password"><br>
+                <b> Confirm Password:</b><br>
+                <Input type = "password" id = "confirm password" name = "confirm password">
+                <span id="password-error-message" class="error-message"></span>
+                
+                <br><b> E-mail:</b><br>
+                <Input type = "text" id = "email" name = "email">
+                <span id="email-error-message" class="error-message"></span>
+                
+                <br><b> Phone number:</b><br>
+                <Input type = "text" id = "phone number" name = "phone number"><br><br>
+                
+                <Input type = "submit" value = "Submit" onclick="
+                var result = true;
+                if(!validateName(document.getElementById('uname').value, document.getElementById('name-error-message')))
+                {
+                    result = false;
+                }
+                if(!validatePassword(document.getElementById('password').value, document.getElementById('confirm password').value, document.getElementById('password-error-message')))
+                {
+                    result = false;
+                }
+                if(!validateEmail(document.getElementById('email').value, document.getElementById('email-error-message')))
+                {
+                    result = false;
+                }
+                return result;
+                ;"><br>
+        </form>
+    </div>
+	</body>
+</html>

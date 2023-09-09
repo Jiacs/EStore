@@ -1,0 +1,47 @@
+MYSQL
+====================================================================================================
+databases:
+
+show databases;
+create database database_name;
+use database_name;
+
+====================================================================================================
+tables: 
+
+create table tableName(
+    variable_name variable_type Add-On,
+);
+
+describe tableName;
+
+Add-On: UNIQUE, PRIMARY KEY, NOT NULL, AUTO_INCREMENT
+
+create table tableName(
+    ref_name variable_type,
+    CONSTRAINT fk_tablename1_tablename2 FOREIGN KEY (ref_name)
+    REFERENCES Customer(ref_name)
+);
+
+select * from table_name where/order by CONDITION
+=====================================================================================================
+operations:
+
+insert:
+
+insert into table_name(var_name1, var_name2, ...) values(val_for_var1, val_for_var2, ...)；
+insert into table_name values(val_for_var1, val_for_var2, ...)；
+
+primary key auto increment value can be null, will automatically assign. 
+
+update:
+
+update table_name set var_name = var_val, var1_name = var1_val where var = var_val;
+
+delete:
+
+delete from table_name where var_name = var_value;
+
+query:
+
+select * from table_name where CONDITION;

@@ -1,0 +1,35 @@
+div{
+    padding: 16px;
+    background-color:aliceblue;
+    border-radius: 12px;
+}
+input[type = text]{
+    width: auto;
+    display: inline;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 8px;
+}
+input[type = password]{
+    width: auto;
+    display: inline;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 8px;
+}
+input[type = submit]{
+    width: auto;
+    background-color: aquamarine;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 8px;
+}
+.error-message {
+    color: red;
+}

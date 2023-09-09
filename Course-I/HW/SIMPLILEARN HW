@@ -1,0 +1,38 @@
+show databases;
+create database meeting;
+use meeting;
+
+create table Client(
+    cid int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(256) NOT NULL,
+    phone varchar(16), 
+    email varchar(256)
+);
+
+describe Client;
+
+create table ClientMeeting(
+    mid int PRIMARY KEY AUTO_INCREMENT,
+    time varchar(256) NOT NULL,
+    cid int,
+    CONSTRAINT fk_client_clientmeeting FOREIGN KEY (cid)
+    REFERENCES Client(cid)
+);
+
+describe ClientMeeting;
+
+insert into Client values(null, 'john', '+1 9093271239', 'john123@gmail.com');
+insert into Client values(null, 'mike', '+1 9091233139', 'mike123@gmail.com');
+insert into Client values(null, 'fiona', '+1 9093212349', 'fiona123@gmail.com');
+
+select * from Client;
+
+update Client set name = 'josh' where cid = 1;
+
+select * from Client;
+
+delete from Client where name = 'mike';
+
+select * from Client;
+
+select * from Client where name like 'j%';

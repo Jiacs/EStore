@@ -1,0 +1,12 @@
+table, th, td{ border:1px solid black;}
+table {background-color:#ffffff;}         
+tr{background-color:#ffffff; color:#000000;}
+#Unavaliable{background-color:#8d8d8d;}
+div{
+    padding: 16px;
+    background-color:aliceblue;
+    border-radius: 12px;
+}
+.error-message {
+    color: red;
+}
